@@ -1,0 +1,102 @@
+[
+	{
+		"anneeAlbum" : 2008,
+		"artistes" : 
+		[
+			"College"
+		],
+		"duree" : 
+		{
+			"minutes" : 1,
+			"seconds" : 27
+		},
+		"nomAlbum" : "Teenage color Ep",
+		"titre" : "The scarlett empress"
+	},
+	{
+		"anneeAlbum" : 2009,
+		"artistes" : 
+		[
+			"Desire"
+		],
+		"duree" : 
+		{
+			"minutes" : 4,
+			"seconds" : 56
+		},
+		"nomAlbum" : "Desire",
+		"titre" : "Under Your Spell"
+	},
+	{
+		"anneeAlbum" : 2018,
+		"artistes" : 
+		[
+			"Philippe Charny"
+		],
+		"duree" : 
+		{
+			"minutes" : 4,
+			"seconds" : 21
+		},
+		"nomAlbum" : "Dewander EP",
+		"titre" : "Your Name"
+	},
+	{
+		"anneeAlbum" : 2016,
+		"artistes" : 
+		[
+			"The Midnight",
+			"Nikki Flores"
+		],
+		"duree" : 
+		{
+			"minutes" : 5,
+			"seconds" : 32
+		},
+		"nomAlbum" : "Endless Summer",
+		"titre" : "Jason (feat. Nikki Flores)"
+	},
+	{
+		"anneeAlbum" : 2014,
+		"artistes" : 
+		[
+			"Electric Youth",
+			"College"
+		],
+		"duree" : 
+		{
+			"minutes" : 4,
+			"seconds" : 28
+		},
+		"nomAlbum" : "Innerworld (Deluxe Edition)",
+		"titre" : "A Real Hero"
+	},
+	{
+		"anneeAlbum" : 2017,
+		"artistes" : 
+		[
+			"The Midnight"
+		],
+		"duree" : 
+		{
+			"minutes" : 6,
+			"seconds" : 2
+		},
+		"nomAlbum" : "Nocturnal",
+		"titre" : "Crystalline"
+	},
+	{
+		"anneeAlbum" : 2014,
+		"artistes" : 
+		[
+			"Home"
+		],
+		"duree" : 
+		{
+			"minutes" : 3,
+			"seconds" : 53
+		},
+		"nomAlbum" : "Before the Night",
+		"titre" : "Before the Night"
+	}
+]
