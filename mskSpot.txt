@@ -1,24 +1,24 @@
 
 musique (infos:album,titre,artiste/groupe,annee,duree,version(radioMix,..))
 |
- ->source tÈlÈchargement(site,tracker), protocole(ddl,.torrent,magnet)
+ ->source t√©l√©chargement(site,tracker), protocole(ddl,.torrent,magnet)
 
 
-1)RÈcupÈrer ‡ partir de Spotify(outil le plus utilisÈ pour streaming musique on suppose) 
+1)R√©cup√©rer √† partir de Spotify(outil le plus utilis√© pour streaming musique on suppose) 
 	les infos concernant la/les musiques d'une playlist.
 
-2)Enregistrer ces informations et faire une sorte de file d'attente (on tÈlÈcharge une par une)
+2)Enregistrer ces informations et faire une sorte de file d'attente (on t√©l√©charge une par une)
 
-3)Chercher pour la musique des sources de tÈlÈchargement
+3)Chercher pour la musique des sources de t√©l√©chargement
 
-4)TÈlÈcharger une premiËre version de la musique (en conservant les sources + datage 
+4)T√©l√©charger une premi√®re version de la musique (en conservant les sources + datage 
 	de la recherche de sources)
 
-5)VÈrifier qualitÈ fichier (infos MediaInfo d'abord puis analyse spectre frÈquence (chercher fmax)
+5)V√©rifier qualit√© fichier (infos MediaInfo d'abord puis analyse spectre fr√©quence (chercher fmax)
 
-6)RÈpÈter les Ètapes 4 et 5 pour chaque source
+6)R√©p√©ter les √©tapes 4 et 5 pour chaque source
 
-//Correspond ‡ la musique que l'on cherche ‡ tÈlÈcharger, toutes ces infos sont fournis par la plateforme
+//Correspond √† la musique que l'on cherche √† t√©l√©charger, toutes ces infos sont fournis par la plateforme
 	de streaming comme Spotify
 Musique{
 	album,titre,version : chaines
@@ -26,7 +26,7 @@ Musique{
 	sources : ensemble de Sources
 	anneeAlbum : entier positif court
 	duree : duree(format->hh:mm:ss)
-	//infos principales : *artiste/groupe* - *titre* *version* *annÈe* *album* *duree**
+	//infos principales : *artiste/groupe* - *titre* *version* *ann√©e* *album* *duree**
 	fichiers : ensemble de Fichiers
 }
 
@@ -37,28 +37,28 @@ Source{
 
 File : ensemble de musiques
 
-//Correspond au fichier que l'on DEVRAIT tÈlÈchargÈ si on se fit au fichier NFO du torrent/page
+//Correspond au fichier que l'on DEVRAIT t√©l√©charg√© si on se fit au fichier NFO du torrent/page
 	renseignements du fichier.
-//Correspond Ègalement au fichier final, tÈlÈchargÈ. (IdÈalement le fichier final corresponde
-	aux infos trouvÈs sur le NFO/page renseignements)
+//Correspond √©galement au fichier final, t√©l√©charg√©. (Id√©alement le fichier final corresponde
+	aux infos trouv√©s sur le NFO/page renseignements)
 Fichier{
 	musique : Musique
 	//infos : FichierNfo
-	format : enumÈration(FLAC,ALAC,MP3,WAV,...)
+	format : enum√©ration(FLAC,ALAC,MP3,WAV,...)
 	duree : duree(format->hh:mm:ss)
-	//bitrateMode : enumÈration(Variable,Constant,Average,...)
-	bitrate (unitÈ kbps) : entier positif court
-	nbDeCanaux : enumÈration(Stereo,5.1,Mono,...)
+	//bitrateMode : enum√©ration(Variable,Constant,Average,...)
+	bitrate (unit√© kbps) : entier positif court
+	nbDeCanaux : enum√©ration(Stereo,5.1,Mono,...)
 	freqEchant : entier positif 
 	profondeurBit : entier positif court
-	taille (unitÈ : octets) : entier positif
-	Encodeur : ÈnumÈration(libFLAC)
-	versEncodeur : Version(format->a.*.*)	//-1 si champs vide, premier champs obligatoire (par dÈf. 0)
+	taille (unit√© : octets) : entier positif
+	Encodeur : √©num√©ration(libFLAC)
+	versEncodeur : Version(format->a.*.*)	//-1 si champs vide, premier champs obligatoire (par d√©f. 0)
 	dateEncodage : date(format->AAAA-MM-DD)
 }
 
-l'objet musique pendant la phase de prÈ-recherche n'est pas le mÍme objet que celui se trouvant dans le fichier
-	tÈlÈchargÈ car il se peut qu'on ai trouvÈ le morceau dans un album genre compil', et du coup
+l'objet musique pendant la phase de pr√©-recherche n'est pas le m√™me objet que celui se trouvant dans le fichier
+	t√©l√©charg√© car il se peut qu'on ai trouv√© le morceau dans un album genre compil', et du coup
 	pas l'album originel!
 	
 Telechargement{
@@ -66,15 +66,15 @@ Telechargement{
 }	
 
 On cherche sur un ensemble de sites des fichiers pouvant contenir la musique (souvent des albums
-	ou discographie), on privilÈgie les torrents avec beaucoup de seeder,un bon rapport seed/leech
-	+ on vÈrifie les infos du nfo
+	ou discographie), on privil√©gie les torrents avec beaucoup de seeder,un bon rapport seed/leech
+	+ on v√©rifie les infos du nfo
 
-On peut rÈutiliser la cover d'album de spotify pour l'ajouter au fichier final!! (Ènorme)
+On peut r√©utiliser la cover d'album de spotify pour l'ajouter au fichier final!! (√©norme)
 __________________________________________
 
 
-//Toutes requetes ‡ l'interface de prog Spotify nÈcessite une authentification (OAuth token)
-//Je pense que le mieux c'est de faire une demande ‡ l'utilisateur mÍme plutot que de faire toutes les 
+//Toutes requetes √† l'interface de prog Spotify n√©cessite une authentification (OAuth token)
+//Je pense que le mieux c'est de faire une demande √† l'utilisateur m√™me plutot que de faire toutes les 
 	requetes depuis un meme compte
 Premier objectif : 
 -Convertir une playlist Spotify en un ensemble de Musiques (sans fichiers/sources pour l'instant) au format JSON
@@ -82,43 +82,58 @@ Premier objectif :
 
 Commande env linux pour afficher le contenu du json en utilisant mon token OAuth (token temporaire)
 curl -X "GET" "https://api.spotify.com/v1/playlists/4YEwaHa5uYARV44afNEbNl" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer BQCi4jgMXaJYNLVKHUy6og41M6M-T8ZaB_PlyJ9C2nCddyJXiPSJsDQ_bRRyvwjE3ci8XGcbghHTs3PoXmrudPB4iPmoiHN1kszy2RIvIvirX8k9dGYDHNE6u2d5j2gjxLvl9BxtkstZLg"
-//trouver l'Èquivalent en code
+//trouver l'√©quivalent en code
 
 
 json->tracks->items->*idObjet(0-n;i++)*->track->album->name
 	->track->name
 	->track->artists->*idArtiste(0-n;i++)*->name
-	//sur l'api, la version fait parti intÈgrante du titre du morceau, donc on cancel l'attr version
+	//sur l'api, la version fait parti int√©grante du titre du morceau, donc on cancel l'attr version
 	->track->album->release_date
-		(RÈcupÈrer l'annÈe du string suivant)
+		(R√©cup√©rer l'ann√©e du string suivant)
 	->track->duration
 		(Convertir en Duree)
 	(->track->album->images->0->url	//image en dimension 600x600)
 	(Convertir en Date,format->AAAA-MM-DD)->*idDernierObjet*->added_at	//pour nom fichier JSON~
 
-//curlpp->lib pour faire la requete http GET du json, jsoncpp->lib pour rÈcupÈrer les champs interessant
+//curlpp->lib pour faire la requete http GET du json, jsoncpp->lib pour r√©cup√©rer les champs interessant
 //Utiliser json for modern C++ pour serialiser/deserialiser un objet
-//j'ai installÈ la librairie curl,curlcpp et jsoncpp sur WSL
+//j'ai install√© la librairie curl,curlcpp et jsoncpp sur WSL
 g++ -o main main.cpp -I . -lcurlpp -lcurl -ljsoncpp
 
-Pour gÈnÈrer le token OAuth -> https://developer.spotify.com/console/get-playlist/?playlist_id=3cEYpjA9oz9GiPac4AsH4n&market=ES&fields=items(added_by.id%2Ctrack(name%2Chref%2Calbum(name%2Chref)))
-Le programme devrait d'abord vÈrifier si le fichier json a vraiment besoin d'Ítre re-tÈlÈchargÈ
-	(si la date d'ajout du dernier morceau de la playlist du fichier json correspond ‡ celui de la playlist
-	online=>pas besoin de re-tÈlÈcharger la mÍme chose!)
+Pour g√©n√©rer le token OAuth -> https://developer.spotify.com/console/get-playlist/?playlist_id=3cEYpjA9oz9GiPac4AsH4n&market=ES&fields=items(added_by.id%2Ctrack(name%2Chref%2Calbum(name%2Chref)))
+Le programme devrait d'abord v√©rifier si le fichier json a vraiment besoin d'√™tre re-t√©l√©charg√©
+	(si la date d'ajout du dernier morceau de la playlist du fichier json correspond √† celui de la playlist
+	online=>pas besoin de re-t√©l√©charger la m√™me chose!)
 
 //on convertis un objet en objet JSON, puis on enregistre l'objet JSON dans un fichier JSON
 //on recupere le contenu d'un fichier JSON pour en faire un objet JSON, puis on convertis cet objet JSON
 	en objet.
 
-RÈcupÈrer token OAuth : (le champs redirect_uri est sensÈ Ítre le lien vers lequel est redirigÈ l'utilisateur
-	aprËs l'autorisation, l'url final comporte entre autre le champs token ‡ rÈcupÈrer
+R√©cup√©rer token OAuth : (le champs redirect_uri est sens√© √™tre le lien vers lequel est redirig√© l'utilisateur
+	apr√®s l'autorisation, l'url final comporte entre autre le champs token √† r√©cup√©rer
 https://accounts.spotify.com/authorize?client_id=8e02a3ee1a6e4307b296aa3e846c0e88&redirect_uri=http:%2F%2Flocalhost%3A8888%2Fcallback&response_type=token
 
 Prochain objectif : 
-La classe FichierMusique hÈrite de Fichier.
-FichierMusique contient les infos telles que le bitrate, nb de canaux, profondeur en bits, freq Èchantillonage,
-	spectre frÈquence, duree, format, mode bitrate
+La classe FichierMusique h√©rite de Fichier.
+FichierMusique contient les infos telles que le bitrate, nb de canaux, profondeur en bits, freq √©chantillonage,
+	spectre fr√©quence, duree, format, mode bitrate
 //utiliser la librairie MediaInfoLib->Github de MediaArea
+_________________________________________________!!!
+Faire les tests unitaires de chaque classe
+//modifier l'impl√©mentation de la m√©thode Fichier::fstreamToFichier (virer les reverse) : 
 
+// /chemin/fichier.mp3		//taille chaine : 19 (0..18)
+//	  ^	     ^
+//	 fin	   debut
+
+unsigned int = path.size()-1;
+while(path[i-1]!='\0'&&path[i]!='/')
+	i--;
+
+//i=8
+
+taille nom fichier = taille path - i
+	=19-8=11
 	
 		
