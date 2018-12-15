@@ -16,7 +16,7 @@
 #include <cmath>   //round -> arrondir à la seconde près plutot que de tronquer
 #include <iostream>
 
-//g++ -o main md5/md5.cpp Musique.cpp Fichier.cpp main.cpp -I . -I md5 -lcurlpp -lcurl -ljsoncpp -lstdc++fs
+//g++ -o bin/main md5/md5.cpp Musique.cpp Fichier.cpp main.cpp -I . -I md5 -lcurlpp -lcurl -ljsoncpp -lstdc++fs
 //-std=c++17 recommandé a cause de filesystem apparemment?
 int main()
 {
