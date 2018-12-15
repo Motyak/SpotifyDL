@@ -119,21 +119,6 @@ La classe FichierMusique hérite de Fichier.
 FichierMusique contient les infos telles que le bitrate, nb de canaux, profondeur en bits, freq échantillonage,
 	spectre fréquence, duree, format, mode bitrate
 //utiliser la librairie MediaInfoLib->Github de MediaArea
-_________________________________________________!!!
-Faire les tests unitaires de chaque classe
-//modifier l'implémentation de la méthode Fichier::fstreamToFichier (virer les reverse) : 
-
-// /chemin/fichier.mp3		//taille chaine : 19 (0..18)
-//	  ^	     ^
-//	 fin	   debut
-
-unsigned int = path.size()-1;
-while(path[i-1]!='\0'&&path[i]!='/')
-	i--;
-
-//i=8
-
-taille nom fichier = taille path - i
-	=19-8=11
-	
+__________________________________________
+optimiser avec des pointeurs,passage par référence
 		

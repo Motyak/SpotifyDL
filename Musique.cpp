@@ -228,3 +228,23 @@ Protocole Musique::strToProto(std::string str)
     else    //str=="torrent"
         return Protocole::torrent;
 }
+
+#ifndef NDEBUG
+#include <cassert>
+#ifdef _MUSIQUE_UT_
+//g++ -o Musique_UT Musique.cpp -I . -ljsoncpp -D _MUSIQUE_UT_
+int main()
+{
+    Musique msq("titre","nomAlbum",{"artiste"},2018,Duree(0,3,0));
+    std::vector<Musique>vec{msq};
+    Json::Value v=Musique::objToJsonObj(vec);
+    std::cout<<v<<"\n";
+    std::vector<Musique>vec2=Musique::jsonObjToObj(v);
+    for(unsigned int i=0;i<vec2.size();++i)
+        std::cout<<"duree : "<<vec.at(i).getDuree().get()<<"\ntitre : "<<vec.at(i).getTitre()<<"\n";
+    
+
+    return 0;
+}
+#endif
+#endif

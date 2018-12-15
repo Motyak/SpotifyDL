@@ -23,8 +23,8 @@ int main()
     /*Envoyer une requete pour recuperer le json de la playlist Spotify, puis je l'enregistre dans un fichier json*/
 
     //mettre le token en argument du prog ?
-    const std::string OAUTH_TOKEN="BQAPRxyZNtEbCfiAOrorJvw8NDYe076Aq_7tKAgfspk0G3-G6H4l64RjAJPrquHlwRG70fzgjGIdr3_EfR4YBeS_QOdxuOmC6TNpL1HU2qSZfUD4_zg5WrFRtStXNrni9ea1_RQ1cwfCMw";
-    const std::string PLAYLIST_ID="4YEwaHa5uYARV44afNEbNl";	//playlist radio bonheur
+    constexpr std::string OAUTH_TOKEN="BQAPRxyZNtEbCfiAOrorJvw8NDYe076Aq_7tKAgfspk0G3-G6H4l64RjAJPrquHlwRG70fzgjGIdr3_EfR4YBeS_QOdxuOmC6TNpL1HU2qSZfUD4_zg5WrFRtStXNrni9ea1_RQ1cwfCMw";
+    constexpr std::string PLAYLIST_ID="4YEwaHa5uYARV44afNEbNl";	//playlist radio bonheur
 
     curlpp::Easy req;
     std::list<std::string> header;
@@ -126,8 +126,8 @@ for(unsigned short i=0;i<root["tracks"]["items"].size();++i)
 
     std::cout<<"\n\n"<<liste[46].duree.get()<<"\n"<<liste[46].artistes[0]<<","<<liste[46].artistes[1]<<","<<liste[46].artistes[2]<<";"<<liste[46].titre<<std::endl;*/
 
-    Fstream monFichier1("./ruleTheWorld.flac");
-    Fstream monFichier2("./test.flac");
+    Fstream monFichier1("ruleTheWorld.flac");
+    Fstream monFichier2("test.flac");
     Fichier fichier1;
     Fichier fichier2;
     fichier1=Fichier::fstreamToFichier(monFichier1);

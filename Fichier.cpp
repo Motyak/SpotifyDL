@@ -94,3 +94,24 @@ Fichier Fichier::fstreamToFichier(Fstream& fstr)
 
     return fichier;
 }
+
+#ifndef NDEBUG
+#include <cassert>
+#ifdef _FICHIER_UT_
+//g++ -o Fichier_UT md5/md5.cpp Fichier.cpp -I . -I md5 -lstdc++fs -D _FICHIER_UT_
+int main()
+{
+    Fstream fstr("test.flac");  //taille path 17;i=16;i=8 a la fin;taille nom 9
+    Fstream msq("ruleTheWorld.flac");
+    Fichier fichier=Fichier::fstreamToFichier(fstr);
+    Fichier fichier2=Fichier::fstreamToFichier(msq);
+
+    assert(fichier2.is_same(fichier));
+
+    std::cout<<fichier.getNom()<<"\n";
+    
+
+    return 0;
+}
+#endif
+#endif
