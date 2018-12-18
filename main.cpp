@@ -23,8 +23,8 @@ int main()
     /*Envoyer une requete pour recuperer le json de la playlist Spotify, puis je l'enregistre dans un fichier json*/
 
     //mettre le token en argument du prog ?
-    constexpr std::string OAUTH_TOKEN="BQAPRxyZNtEbCfiAOrorJvw8NDYe076Aq_7tKAgfspk0G3-G6H4l64RjAJPrquHlwRG70fzgjGIdr3_EfR4YBeS_QOdxuOmC6TNpL1HU2qSZfUD4_zg5WrFRtStXNrni9ea1_RQ1cwfCMw";
-    constexpr std::string PLAYLIST_ID="4YEwaHa5uYARV44afNEbNl";	//playlist radio bonheur
+    const std::string OAUTH_TOKEN="BQA_Rtz6wlduRY2jXT-agb6-npH8s8OOfVD5pXhSpxtrcQwxtrSYWscsYyooUfKiKPlnfL0FYo-Rut39ZX2fKhViSKF_h2zoNvMHi7rh_JL0nmiG3J4wyztrogF9fxTlpN25wglbpNJdkQ";
+    const std::string PLAYLIST_ID="4YEwaHa5uYARV44afNEbNl";	//playlist radio bonheur
 
     curlpp::Easy req;
     std::list<std::string> header;

@@ -1,4 +1,4 @@
-
+﻿
 musique (infos:album,titre,artiste/groupe,annee,duree,version(radioMix,..))
 |
  ->source téléchargement(site,tracker), protocole(ddl,.torrent,magnet)
@@ -121,4 +121,6 @@ FichierMusique contient les infos telles que le bitrate, nb de canaux, profondeu
 //utiliser la librairie MediaInfoLib->Github de MediaArea
 __________________________________________
 optimiser avec des pointeurs,passage par référence
+
+faire une méthode pour pouvoir comparer deux playlists (comparer le contenu/=pas juste ligne par ligne json;ce qui manque/ce qui a en plus)
 		

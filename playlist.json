@@ -112,34 +112,6 @@
 		"titre" : "Jerk It Out"
 	},
 	{
-		"anneeAlbum" : 1985,
-		"artistes" : 
-		[
-			"a-ha"
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 45
-		},
-		"nomAlbum" : "Hunting High And Low",
-		"titre" : "Take On Me"
-	},
-	{
-		"anneeAlbum" : 2001,
-		"artistes" : 
-		[
-			"Modjo"
-		],
-		"duree" : 
-		{
-			"minutes" : 5,
-			"seconds" : 7
-		},
-		"nomAlbum" : "Modjo (Remastered)",
-		"titre" : "Lady - Hear Me Tonight"
-	},
-	{
 		"anneeAlbum" : 2013,
 		"artistes" : 
 		[
@@ -152,20 +124,6 @@
 		},
 		"nomAlbum" : "In A Tidal Wave Of Mystery (Deluxe Edition)",
 		"titre" : "Safe And Sound"
-	},
-	{
-		"anneeAlbum" : 1978,
-		"artistes" : 
-		[
-			"Queen"
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 29
-		},
-		"nomAlbum" : "Jazz (2011 Remaster)",
-		"titre" : "Don't Stop Me Now - Remastered"
 	},
 	{
 		"anneeAlbum" : 2018,
@@ -281,20 +239,6 @@
 		"titre" : "Baby I'm Yours (feat. Irfane)"
 	},
 	{
-		"anneeAlbum" : 1983,
-		"artistes" : 
-		[
-			"Eurythmics"
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 37
-		},
-		"nomAlbum" : "Sweet Dreams (Are Made Of This)",
-		"titre" : "Sweet Dreams (Are Made of This) - Remastered"
-	},
-	{
 		"anneeAlbum" : 2011,
 		"artistes" : 
 		[
@@ -323,35 +267,6 @@
 		},
 		"nomAlbum" : "Shine",
 		"titre" : "American Boy"
-	},
-	{
-		"anneeAlbum" : 2001,
-		"artistes" : 
-		[
-			"Weezer"
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 20
-		},
-		"nomAlbum" : "Weezer (Green Album)",
-		"titre" : "Island In The Sun"
-	},
-	{
-		"anneeAlbum" : 2008,
-		"artistes" : 
-		[
-			"Crystal Castles",
-			"HEALTH"
-		],
-		"duree" : 
-		{
-			"minutes" : 4,
-			"seconds" : 18
-		},
-		"nomAlbum" : "Crystal Castles",
-		"titre" : "Crimewave"
 	},
 	{
 		"anneeAlbum" : 2008,
@@ -397,20 +312,6 @@
 		"titre" : "Heavy"
 	},
 	{
-		"anneeAlbum" : 2006,
-		"artistes" : 
-		[
-			"Red Hot Chili Peppers"
-		],
-		"duree" : 
-		{
-			"minutes" : 5,
-			"seconds" : 35
-		},
-		"nomAlbum" : "Stadium Arcadium",
-		"titre" : "Snow (Hey Oh)"
-	},
-	{
 		"anneeAlbum" : 2015,
 		"artistes" : 
 		[
@@ -423,20 +324,6 @@
 		},
 		"nomAlbum" : "A Head Full Of Dreams",
 		"titre" : "Adventure Of A Lifetime"
-	},
-	{
-		"anneeAlbum" : 2001,
-		"artistes" : 
-		[
-			"Daft Punk"
-		],
-		"duree" : 
-		{
-			"minutes" : 5,
-			"seconds" : 20
-		},
-		"nomAlbum" : "Discovery",
-		"titre" : "One More Time"
 	},
 	{
 		"anneeAlbum" : 2016,
@@ -495,20 +382,6 @@
 		"titre" : "Power"
 	},
 	{
-		"anneeAlbum" : 2008,
-		"artistes" : 
-		[
-			"Empire of the Sun"
-		],
-		"duree" : 
-		{
-			"minutes" : 4,
-			"seconds" : 27
-		},
-		"nomAlbum" : "Walking On A Dream",
-		"titre" : "We Are The People"
-	},
-	{
 		"anneeAlbum" : 2018,
 		"artistes" : 
 		[
@@ -536,34 +409,6 @@
 		},
 		"nomAlbum" : "Vice",
 		"titre" : "Vice"
-	},
-	{
-		"anneeAlbum" : 2016,
-		"artistes" : 
-		[
-			"Childish Gambino"
-		],
-		"duree" : 
-		{
-			"minutes" : 5,
-			"seconds" : 27
-		},
-		"nomAlbum" : "\"Awaken, My Love!\"",
-		"titre" : "Redbone"
-	},
-	{
-		"anneeAlbum" : 2012,
-		"artistes" : 
-		[
-			"C2C"
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 27
-		},
-		"nomAlbum" : "Tetra",
-		"titre" : "Down The Road"
 	},
 	{
 		"anneeAlbum" : 2013,
@@ -636,93 +481,6 @@
 		"titre" : "Alright"
 	},
 	{
-		"anneeAlbum" : 2007,
-		"artistes" : 
-		[
-			"M.I.A."
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 25
-		},
-		"nomAlbum" : "Kala",
-		"titre" : "Paper Planes"
-	},
-	{
-		"anneeAlbum" : 2017,
-		"artistes" : 
-		[
-			"Aaron Smith",
-			"Krono",
-			"Luvli"
-		],
-		"duree" : 
-		{
-			"minutes" : 4,
-			"seconds" : 16
-		},
-		"nomAlbum" : "Moody Ibiza 2017",
-		"titre" : "Dancin (feat. Luvli) - Krono Remix"
-	},
-	{
-		"anneeAlbum" : 2009,
-		"artistes" : 
-		[
-			"Kid Cudi",
-			"Crookers"
-		],
-		"duree" : 
-		{
-			"minutes" : 4,
-			"seconds" : 42
-		},
-		"nomAlbum" : "Man On The Moon: The End Of Day (Int'l Version)",
-		"titre" : "Day 'N' Nite - Crookers Remix"
-	},
-	{
-		"anneeAlbum" : 2012,
-		"artistes" : 
-		[
-			"alt-J"
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 47
-		},
-		"nomAlbum" : "An Awesome Wave",
-		"titre" : "Breezeblocks"
-	},
-	{
-		"anneeAlbum" : 2003,
-		"artistes" : 
-		[
-			"One-T"
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 49
-		},
-		"nomAlbum" : "The One-T ODC",
-		"titre" : "The Magic Key"
-	},
-	{
-		"anneeAlbum" : 1964,
-		"artistes" : 
-		[
-			"Chuck Berry"
-		],
-		"duree" : 
-		{
-			"minutes" : 2,
-			"seconds" : 42
-		},
-		"nomAlbum" : "St. Louis to Liverpool",
-		"titre" : "You Never Can Tell"
-	},
-	{
 		"anneeAlbum" : 2015,
 		"artistes" : 
 		[
@@ -754,20 +512,6 @@
 		"anneeAlbum" : 2004,
 		"artistes" : 
 		[
-			"Green Day"
-		],
-		"duree" : 
-		{
-			"minutes" : 2,
-			"seconds" : 56
-		},
-		"nomAlbum" : "American Idiot",
-		"titre" : "American Idiot"
-	},
-	{
-		"anneeAlbum" : 2004,
-		"artistes" : 
-		[
 			"The Killers"
 		],
 		"duree" : 
@@ -777,36 +521,6 @@
 		},
 		"nomAlbum" : "Hot Fuss",
 		"titre" : "Mr. Brightside"
-	},
-	{
-		"anneeAlbum" : 2006,
-		"artistes" : 
-		[
-			"Bob Sinclar",
-			"Steve Edwards"
-		],
-		"duree" : 
-		{
-			"minutes" : 6,
-			"seconds" : 41
-		},
-		"nomAlbum" : "Western Dream",
-		"titre" : "World, Hold On"
-	},
-	{
-		"anneeAlbum" : 2017,
-		"artistes" : 
-		[
-			"SG Lewis",
-			"Toulouse"
-		],
-		"duree" : 
-		{
-			"minutes" : 3,
-			"seconds" : 8
-		},
-		"nomAlbum" : "Times We Had",
-		"titre" : "Times We Had"
 	},
 	{
 		"anneeAlbum" : 2003,
@@ -865,31 +579,130 @@
 		"titre" : "Walking On A Dream"
 	},
 	{
-		"anneeAlbum" : 2012,
+		"anneeAlbum" : 1984,
 		"artistes" : 
 		[
-			"alt-J"
+			"Van Halen"
+		],
+		"duree" : 
+		{
+			"minutes" : 4,
+			"seconds" : 2
+		},
+		"nomAlbum" : "1984 (Remastered)",
+		"titre" : "Jump - 2015 Remastered Version"
+	},
+	{
+		"anneeAlbum" : 2011,
+		"artistes" : 
+		[
+			"Madcon"
 		],
 		"duree" : 
 		{
 			"minutes" : 3,
 			"seconds" : 38
 		},
-		"nomAlbum" : "An Awesome Wave (Deluxe Version)",
-		"titre" : "Something Good"
+		"nomAlbum" : "Contraband",
+		"titre" : "Beggin'"
 	},
 	{
-		"anneeAlbum" : 2015,
+		"anneeAlbum" : 2004,
 		"artistes" : 
 		[
-			"Lanterns on the Lake"
+			"Franz Ferdinand"
+		],
+		"duree" : 
+		{
+			"minutes" : 3,
+			"seconds" : 57
+		},
+		"nomAlbum" : "Franz Ferdinand",
+		"titre" : "Take Me Out"
+	},
+	{
+		"anneeAlbum" : 2009,
+		"artistes" : 
+		[
+			"Edward Sharpe & The Magnetic Zeros"
+		],
+		"duree" : 
+		{
+			"minutes" : 5,
+			"seconds" : 3
+		},
+		"nomAlbum" : "Up From Below",
+		"titre" : "Home"
+	},
+	{
+		"anneeAlbum" : 2012,
+		"artistes" : 
+		[
+			"Macklemore & Ryan Lewis"
+		],
+		"duree" : 
+		{
+			"minutes" : 4,
+			"seconds" : 18
+		},
+		"nomAlbum" : "The Heist",
+		"titre" : "Can't Hold Us - feat. Ray Dalton"
+	},
+	{
+		"anneeAlbum" : 2005,
+		"artistes" : 
+		[
+			"Bloc Party"
+		],
+		"duree" : 
+		{
+			"minutes" : 3,
+			"seconds" : 40
+		},
+		"nomAlbum" : "Silent Alarm",
+		"titre" : "Helicopter"
+	},
+	{
+		"anneeAlbum" : 2004,
+		"artistes" : 
+		[
+			"Teddybears"
 		],
 		"duree" : 
 		{
 			"minutes" : 2,
-			"seconds" : 56
+			"seconds" : 60
 		},
-		"nomAlbum" : "Beings",
-		"titre" : "Through The Cellar Door"
+		"nomAlbum" : "Fresh",
+		"titre" : "Cobrastyle"
+	},
+	{
+		"anneeAlbum" : 2012,
+		"artistes" : 
+		[
+			"C2C",
+			"Derek Martin"
+		],
+		"duree" : 
+		{
+			"minutes" : 3,
+			"seconds" : 55
+		},
+		"nomAlbum" : "Tetra",
+		"titre" : "Happy"
+	},
+	{
+		"anneeAlbum" : 2007,
+		"artistes" : 
+		[
+			"Gym Class Heroes"
+		],
+		"duree" : 
+		{
+			"minutes" : 3,
+			"seconds" : 57
+		},
+		"nomAlbum" : "Cupid's Chokehold / Breakfast In America",
+		"titre" : "Cupid's Chokehold / Breakfast In America - Radio Mix"
 	}
 ]
