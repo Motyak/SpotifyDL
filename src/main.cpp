@@ -16,15 +16,16 @@
 #include <cmath>   //round -> arrondir à la seconde près plutot que de tronquer
 #include <iostream>
 
-//g++ -o bin/main md5/md5.cpp Musique.cpp Fichier.cpp main.cpp -I . -I md5 -lcurlpp -lcurl -ljsoncpp -lstdc++fs
+//g++ -o ../bin/main md5/md5.cpp Musique.cpp Fichier.cpp main.cpp -I . -I md5 -lcurlpp -lcurl -ljsoncpp -lstdc++fs
 //-std=c++17 recommandé a cause de filesystem apparemment?
 int main()
 {
     /*Envoyer une requete pour recuperer le json de la playlist Spotify, puis je l'enregistre dans un fichier json*/
 
     //mettre le token en argument du prog ?
-    const std::string OAUTH_TOKEN="BQA_Rtz6wlduRY2jXT-agb6-npH8s8OOfVD5pXhSpxtrcQwxtrSYWscsYyooUfKiKPlnfL0FYo-Rut39ZX2fKhViSKF_h2zoNvMHi7rh_JL0nmiG3J4wyztrogF9fxTlpN25wglbpNJdkQ";
+    const std::string OAUTH_TOKEN="BQBPPsZ1ZZrdquCersJvojwydmw-GKkuxShK_hzeK86-Chw5W5XAmNzP9QxNcEH9tSh4KDJfnrjxwfCQBXQ-5VpV7opiez1hYDjBkzavIJGe3bYY1-PKt0NFGfTcozdwxZ1-vP7vNX-UWA";
     const std::string PLAYLIST_ID="4YEwaHa5uYARV44afNEbNl";	//playlist radio bonheur
+	const std::string JSON_PATH="../ressources/playlist.json";
 
     curlpp::Easy req;
     std::list<std::string> header;
@@ -39,7 +40,7 @@ int main()
     req.setOpt<curlpp::options::Url>("https://api.spotify.com/v1/playlists/"+PLAYLIST_ID);
     req.setOpt(curlpp::options::HttpHeader(header));
 
-    file.open("playlist.json",std::ios::out | std::ios::trunc);
+    file.open(JSON_PATH,std::ios::out | std::ios::trunc);
     
     req.perform();
     file << req;
@@ -52,7 +53,7 @@ int main()
 
     //std::cout<<"\n\n\n\n";
 
-    std::ifstream ss("playlist.json",std::ios::binary);//
+    std::ifstream ss(JSON_PATH,std::ios::binary);//
  
     Json::Value root;
 
@@ -110,7 +111,7 @@ for(unsigned short i=0;i<root["tracks"]["items"].size();++i)
     //convertir l'objet musiques en une valeur JSON, puis l'enregistrer dans un fichier
 
     Json::Value objJson=Musique::objToJsonObj(musiques);
-    file.open("playlist.json",std::ios::out | std::ios::trunc);
+    file.open(JSON_PATH,std::ios::out | std::ios::trunc);
     file << objJson;
     file.close();
 
@@ -126,8 +127,8 @@ for(unsigned short i=0;i<root["tracks"]["items"].size();++i)
 
     std::cout<<"\n\n"<<liste[46].duree.get()<<"\n"<<liste[46].artistes[0]<<","<<liste[46].artistes[1]<<","<<liste[46].artistes[2]<<";"<<liste[46].titre<<std::endl;*/
 
-    Fstream monFichier1("ruleTheWorld.flac");
-    Fstream monFichier2("test.flac");
+    Fstream monFichier1("../ressources/ruleTheWorld.flac");
+    Fstream monFichier2("../ressources/test.flac");
     Fichier fichier1;
     Fichier fichier2;
     fichier1=Fichier::fstreamToFichier(monFichier1);

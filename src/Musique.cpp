@@ -232,7 +232,7 @@ Protocole Musique::strToProto(std::string str)
 #ifndef NDEBUG
 #include <cassert>
 #ifdef _MUSIQUE_UT_
-//g++ -o bin/Musique_UT Musique.cpp -I . -ljsoncpp -D _MUSIQUE_UT_
+//g++ -o ../bin/Musique_UT Musique.cpp -I . -ljsoncpp -D _MUSIQUE_UT_
 int main()
 {
     Musique msq("titre","nomAlbum",{"artiste"},2018,Duree(0,3,0));

@@ -120,7 +120,13 @@ FichierMusique contient les infos telles que le bitrate, nb de canaux, profondeu
 	spectre fréquence, duree, format, mode bitrate
 //utiliser la librairie MediaInfoLib->Github de MediaArea
 __________________________________________
-optimiser avec des pointeurs,passage par référence
+(optimiser avec des pointeurs,passage par référence)
 
-faire une méthode pour pouvoir comparer deux playlists (comparer le contenu/=pas juste ligne par ligne json;ce qui manque/ce qui a en plus)
+faire une méthode pour pouvoir comparer deux playlists (comparer le contenu/=pas juste ligne par ligne json;ce qui manque/ce qui a en plus),
+pour pouvoir indiquer le nb de morceaux en + et en - par rapport au dernier "get" avec la date.
 		
+Juste un/des chemin(s) à indiquer, puis lecture récursive des répertoires pour retrouver les noms de musiques correspondants à la playlist.
+Idéalement, on lie son compte Spotify à l'appli web et sur l'appli on peut voir toutes les musiques dans chaque playlist du compte spotify, avec une belle interface et tout.
+Pour chaque musique, une sorte de drapeau pour savoir si la musique en question est disponible localement dans un des chemins spécifiés par l'utilisateur.
+Pour ajouter un fichier musique il suffit de le mettre dans un des chemins et de rafraichir la page pour que les drapeaux s'actualisent.
+
