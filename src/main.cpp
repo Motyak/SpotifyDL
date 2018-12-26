@@ -127,8 +127,8 @@ for(unsigned short i=0;i<root["tracks"]["items"].size();++i)
 
     std::cout<<"\n\n"<<liste[46].duree.get()<<"\n"<<liste[46].artistes[0]<<","<<liste[46].artistes[1]<<","<<liste[46].artistes[2]<<";"<<liste[46].titre<<std::endl;*/
 
-    Fstream monFichier1("../ressources/ruleTheWorld.flac");
-    Fstream monFichier2("../ressources/test.flac");
+    Fstream monFichier1("../ressources/ruleTheWorld.mp3");
+    Fstream monFichier2("../ressources/test.mp3");
     Fichier fichier1;
     Fichier fichier2;
     fichier1=Fichier::fstreamToFichier(monFichier1);
