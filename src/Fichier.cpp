@@ -101,8 +101,8 @@ Fichier Fichier::fstreamToFichier(Fstream& fstr)
 //g++ -o ../bin/Fichier_UT md5/md5.cpp Fichier.cpp -I . -I md5 -lstdc++fs -D _FICHIER_UT_
 int main()
 {
-    Fstream fstr("test.mp3");  //taille path 17;i=16;i=8 a la fin;taille nom 9
-    Fstream msq("ruleTheWorld.mp3");
+    Fstream fstr("../ressources/test.mp3");  //taille path 17;i=16;i=8 a la fin;taille nom 9
+    Fstream msq("../ressources/ruleTheWorld.mp3");
     Fichier fichier=Fichier::fstreamToFichier(fstr);
     Fichier fichier2=Fichier::fstreamToFichier(msq);
 
