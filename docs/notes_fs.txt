@@ -1,0 +1,19 @@
+Idée pour pouvoir relier une Musique (source:SpotifyAPI) à un nom de fichier local :
+Trier toutes les lettres du titre de la Musique, faire de même avec le nom des fichiers.
+A partir d'un certains % de correspondance au niveau des séquences de lettres, on valide.
+
+Pour un titre de musique, séparer mot par mot,
+si y'a 90%+ des mots en commun => équivalence.
+Remplacer les tirets par des espaces pour ne pas avoir 2 mots collés en un.
+Remplacer les parenthèses par des espaces.
+
+faire fonction pour retirer le format d'extension des noms de fichiers (ex:*.flac;*.mp3)
+
+On voudra :
+-un tableau avec tous les morceaux Spotify qui ont été trouvé dans le répertoire (avec chemin+nom fichier)   vert
+-un tableau avec tous les morceaux Spotify qui n'ont pas été trouvé dans le répertoire   rouge
+
+
+S'arranger pour afficher les morceaux d'une jolie manière (pochette d'album,titre,artistes,année) : du web
+(faire correspondre la couleur de la police par rapport à la couleur de la pochette d'album) 
+
